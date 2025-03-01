@@ -3,4 +3,8 @@ Feature: Bank Login Functionality
 
 Scenario: Validate to navigate to bank website page
  Given I navigate to the bank website page
-#  Then I verify the page contains Block
+ Then I enter the customer login as "Harry Potter"
+ And I click "Login" button
+ And I verify the page landed on "Harry Potter" customer page
+ And I click "Logout" button 
+ And I click "Home" button 
